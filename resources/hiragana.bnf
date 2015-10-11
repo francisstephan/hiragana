@@ -1,0 +1,10 @@
+<mot>=h+
+    h = vowel/nkana/conson vowel/wkana/cykana/ykana/sokuon/wspace
+    <conson> = 'k'|'s'|'t'|'n'|'h'|'m'|'r'|'g'|'z'|'d'|'b'|'p'
+	<vowel> = 'a'|'i'|'u'|'e'|'o'
+	<nkana> = ('n' &conson)/('n' <"'">)/('n' &wkana)/('n' &' ')/('n' &'.')/('n' &',')/#"n$"
+	<wkana> = 'wa'|'wo'
+    <ykana> = 'ya'|'yu'|'yo'
+    <wspace> = (' ')*|'.'|','|'?'|'!'
+    cykana  = conson ykana
+    sokuon = conson &conson
